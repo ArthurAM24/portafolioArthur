@@ -10,10 +10,6 @@ export class CurriculumComponent  {
   constructor() {}
 
   downloadCV() {
-    const fileUrl = '../assets/pdf/CV_Arthur_Morales_2023.pdf';
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'CV_Arthur_Morales_2023.pdf';
-    link.click();
+    window.location.href = 'https://drive.google.com/file/d/1fV1khQUsyU8B5nW_soaqh6JMvCenQKzX/view';
   }
 }

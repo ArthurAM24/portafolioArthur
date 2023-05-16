@@ -148,16 +148,7 @@ html {
     font-size: 15px;
     font-weight: normal;
 }
-.content {
-    background-image: url("../img/arthur.png");
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    inset: 7px;
-    border-radius: 3px solid #38cef3;
-    z-index: 3;
-    border-radius: 50%;
-}
+
 .box {
     position: relative;
     width: 300px;
@@ -194,6 +185,16 @@ html {
     background: #fafafc;
     border-radius: 50%;
     z-index: 1;
+}
+.content {
+    background-image: url("../img/arthur.png");
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    inset: 7px;
+    border-radius: 3px solid #38cef3;
+    z-index: 3;
+    border-radius: 50%;
 }
 .inicio .contenido-banner h1 {
     margin-top: 40px;
@@ -299,8 +300,6 @@ html {
     font-size: 30px;
     margin-bottom: 10px;
 }
-
-
 
 /* SECCION S K I L L S */
 .skills {
@@ -1059,7 +1058,7 @@ html {
 .portfolio .contenido-seccion {
     max-width: 1100px;
     margin: auto;
-    padding-bottom: 198px;
+    padding-bottom: 203px;
 }
 
 .portfolio h2 {
