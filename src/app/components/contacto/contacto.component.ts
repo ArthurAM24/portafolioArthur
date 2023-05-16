@@ -7,6 +7,8 @@ import Swal from 'sweetalert2';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
+ 
+  constructor() {}
 
   handleSubmit(event: any) {
     event.preventDefault();

@@ -8,6 +8,9 @@ import Typed from 'typed.js';
 })
 export class SobremiComponent implements AfterViewInit {
   
+   
+  constructor() {}
+  
   @ViewChild('script', { static: true })
   script!: ElementRef;
 

@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./curriculum.component.scss']
 })
 export class CurriculumComponent {
+   
+  constructor() {}
+
+  downloadCV() {
+    window.location.href = '../assets/pdf/CV_Arthur_Morales_2023.pdf';
+  }
 }
