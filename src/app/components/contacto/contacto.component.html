@@ -1,0 +1,42 @@
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <div class="row">
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/xlekvlvv" method="POST" (submit)="handleSubmit($event)">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Tú Nombre" name="name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Dirección de correo" name="email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Mensaje" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Enviar Mensaje <i class="fas fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </form>
+      </div>
+      <!-- Mapa -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="info">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot fa-lg"></i> Perú
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen fa-lg"></i> Celular:
+              +51 983485665
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope fa-sm"></i> Email: arthurmoralesd24@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>          
+    </div>
+  </div>
+</section>

@@ -1,0 +1,1336 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* sweetalert2 cambio de color en el boton OK */
+.swal2-confirm {
+    background-color: #38cef3 !important;
+    border-color: #2bb3d4;
+    box-shadow: 0 0 0 0.2rem #2bb3d4 !important;
+}
+
+/* MENU */
+.container-fluid {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-toggler {
+    color: #38cef3;
+    background: #38cef3;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #38cef3;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.navbar-brand:hover {
+    color: #38cef3;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: #f7f3f3;
+    margin: 0 10px;
+    padding: 3px;
+    transition: .5s;
+}
+
+
+.navbar ul li a:active {
+    color: #f7f3f3;
+}
+
+.navbar ul li a:hover {
+    color: #38cef3;
+    text-shadow: 1px 1px #38cef3;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 5px 3px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.nav-item span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span4 {
+    bottom: -100px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* SECCION I N I C I O */
+.card {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(src/assets/img/fondo.jpg);
+    background-size: cover;
+    height: 86vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.card-body {
+    padding: 22px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.card .card-body .contenido-banner h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.card .card-body .contenido-banner h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #1e2326;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 55px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    inset: -10px 70px;
+    background: linear-gradient(140deg, #38cef3, #f317f3);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.box:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background: #fafafc;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    inset: 7px;
+    border-radius: 3px solid #38cef3;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .container {
+    max-width: 1100px;
+    margin: auto;
+    height: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.sobremi .container p {
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sobremi .container p span {
+    font-size: 25px;
+    color: #38cef3;
+    font-weight: bold;
+}
+
+.sobremi .row {
+    display: flex;
+}
+
+.sobremi .row .col-md-6 h3 {
+    font-size: 28px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    margin-bottom: 25px;
+}
+
+.sobremi .row .col-md-6 ul {
+    /*quita estilo de texto*/
+    list-style: none;
+}
+
+.sobremi .row .col-md-6 ul li {
+    margin: 12px 0;
+}
+
+.sobremi .row .col-md-6 ul li strong {
+    display: inline-block;
+    color: #38cef3;
+    width: 130px;
+}
+
+.sobremi .row .col-md-6 ul li span {
+    background-color: #38cef3;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .row .col-md-3 .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .row .col-md-6 .interes {
+    width: 100%;
+    height: 110px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .row .col-md-3 .interes:hover {
+    background-color: #38cef3;
+    box-shadow: 0 0 20px #38cef3;
+}
+
+.sobremi .row .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+/* SECCION S K I L L S */
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    color: #38cef3;
+    margin-bottom: 25px;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #38cef3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #38cef3;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 15px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .java {
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .php {
+    width: 0%;
+    animation: 2s php forwards;
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .cshard {
+    width: 0%;
+    animation: 2s cshard forwards;
+}
+
+@keyframes cshard {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .c {
+    width: 0%;
+    animation: 2s c forwards;
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .firebase {
+    width: 0%;
+    animation: 2s firebase forwards;
+}
+
+@keyframes firebase {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+
+.skills .skill .mysql {
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .sqlserver {
+    width: 0%;
+    animation: 2s sqlserver forwards;
+}
+
+@keyframes sqlserver {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .mariadb {
+    width: 0%;
+    animation: 2s mariadb forwards;
+}
+
+@keyframes mariadb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+.skills .skill .javaspring {
+    width: 0%;
+    animation: 2s javaspring forwards;
+}
+
+@keyframes javaspring {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .angular {
+    width: 0%;
+    animation: 2s angular forwards;
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 83%;
+    }
+}
+
+.skills .skill .laravel {
+    width: 0%;
+    animation: 2s laravel forwards;
+}
+
+@keyframes laravel {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .eclipse {
+    width: 0%;
+    animation: 2s eclipse forwards;
+}
+
+@keyframes eclipse {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .intellij {
+    width: 0%;
+    animation: 2s intellij forwards;
+}
+
+@keyframes intellij {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.skills .skill .javaScript {
+    width: 0%;
+    animation: 2s javaScript forwards;
+}
+
+@keyframes javaScript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 86%;
+    }
+}
+
+.skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 81%;
+    }
+}
+
+.skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 79%;
+    }
+}
+
+.skills .skill .apirest {
+    width: 0%;
+    animation: 2s apirest forwards;
+}
+
+@keyframes apirest {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .jpa {
+    width: 0%;
+    animation: 2s jpa forwards;
+}
+
+@keyframes jpa {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .windows {
+    width: 0%;
+    animation: 2s windows forwards;
+}
+
+@keyframes windows {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .linux {
+    width: 0%;
+    animation: 2s linux forwards;
+}
+
+@keyframes linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .scrum {
+    width: 0%;
+    animation: 2s scrum forwards;
+}
+
+@keyframes scrum {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .cascada {
+    width: 0%;
+    animation: 2s cascada forwards;
+}
+
+@keyframes cascada {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.skills .skill .diseño {
+    width: 0%;
+    animation: 2s diseño forwards;
+}
+
+@keyframes diseño {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .redes {
+    width: 0%;
+    animation: 2s redes forwards;
+}
+
+@keyframes redes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .ofimatica {
+    width: 0%;
+    animation: 2s ofimatica forwards;
+}
+
+@keyframes ofimatica {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .diseñosis {
+    width: 0%;
+    animation: 2s diseñosis forwards;
+}
+
+@keyframes diseñosis {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .informatica {
+    width: 0%;
+    animation: 2s informatica forwards;
+}
+
+@keyframes informatica {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .poo {
+    width: 0%;
+    animation: 2s poo forwards;
+}
+
+@keyframes poo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .arduino {
+    width: 0%;
+    animation: 2s arduino forwards;
+}
+
+@keyframes arduino {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .spframe {
+    width: 0%;
+    animation: 2s spframe forwards;
+}
+
+@keyframes spframe {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .android {
+    width: 0%;
+    animation: 2s android forwards;
+}
+
+@keyframes android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .google {
+    width: 0%;
+    animation: 2s google forwards;
+}
+
+@keyframes google {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 79%;
+    }
+}
+
+.skills .skill .docker {
+    width: 0%;
+    animation: 2s docker forwards;
+}
+
+@keyframes docker {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 41%;
+    }
+}
+
+.skills .skill .wordpress {
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+
+@keyframes wordpress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+
+/* SECCION CURRICULUM */
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* EFECTO SOMBRA */
+.shadow-effect:hover {
+    box-shadow: 0 2px 20px rgba(56, 206, 243, 0.5);
+
+}
+
+.curriculum h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: #38cef3;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #38cef3;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid #38cef3;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #38cef3;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #38cef3;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #38cef3;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #38cef3;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #38cef3;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.curriculum button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #38cef3;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum button:hover .overlay {
+    width: 100%;
+}
+
+/* SECCION PORTAFOLIO */
+.portfolio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(src/assets/img/fondo.jpg);
+    background-size: cover;
+    height: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 198px;
+}
+
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 3px 10px rgba(72, 216, 235, 0.8); /* Agregamos la sombra */
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(72, 216, 235, 0.8), rgba(72, 216, 235, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto a h3 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #252A2E;
+}
+
+.portfolio .galeria .proyecto p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #252A2E;
+}
+
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.col-md-6 {
+    margin-bottom: 85px;
+}
+
+.col-md-6 .info ul {
+    top: 300px;
+    background-color: #252A2E;
+    padding: 30px;
+    width: 400px;
+    left: auto;
+    right: 5%;
+    transform: translate(-50, -5%);
+    margin-top: -90px;
+    margin-bottom: auto;
+    list-style: none;
+}
+
+
+.contacto {
+    background-image:
+        url(src/assets/img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+
+.contacto .container {
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 58px;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #38cef3;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 25%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 55px;
+}
+
+.contacto .col .info ul li i {
+    color: #38cef3;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #38cef3;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #38cef3;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.redes h2 {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.redes a:hover {
+    background: #38cef3;
+    color: #fff;
+    box-shadow: 0 0 20px #38cef3;
+}
