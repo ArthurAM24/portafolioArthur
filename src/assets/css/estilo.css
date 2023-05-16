@@ -2,7 +2,6 @@
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 }
-
 * {
     box-sizing: border-box;
     font-family: 'Familjen Grotesk', sans-serif;
@@ -10,19 +9,16 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
-
 /* sweetalert2 cambio de color en el boton OK */
 .swal2-confirm {
     background-color: #38cef3 !important;
     border-color: #2bb3d4;
     box-shadow: 0 0 0 0.2rem #2bb3d4 !important;
 }
-
 /* MENU */
 .container-fluid {
     background: #1e2326;
@@ -32,28 +28,23 @@ html {
     left: 0;
     z-index: 99;
 }
-
 .navbar-toggler {
     color: #38cef3;
     background: #38cef3;
 }
-
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     color: #38cef3;
 }
-
 .navbar-nav .nav-link {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
 .navbar-brand:hover {
     color: #38cef3;
 }
-
 .navbar ul li a {
     font-size: 18px;
     color: #f7f3f3;
@@ -61,17 +52,13 @@ html {
     padding: 3px;
     transition: .5s;
 }
-
-
 .navbar ul li a:active {
     color: #f7f3f3;
 }
-
 .navbar ul li a:hover {
     color: #38cef3;
     text-shadow: 1px 1px #38cef3;
 }
-
 .nav-item {
     position: relative;
     display: inline-block;
@@ -80,12 +67,10 @@ html {
     overflow: hidden;
     transition: 0.2s;
 }
-
 .nav-item span {
     position: absolute;
     display: block;
 }
-
 #span1 {
     top: 0;
     left: -100%;
@@ -93,12 +78,10 @@ html {
     height: 2px;
     background: linear-gradient(90deg, transparent, #f317f3);
 }
-
 .nav-item:hover #span1 {
     left: 100%;
     transition: 1s;
 }
-
 #span2 {
     top: -100%;
     right: 0;
@@ -106,13 +89,11 @@ html {
     height: 100%;
     background: linear-gradient(180deg, transparent, #f317f3);
 }
-
 .nav-item:hover #span2 {
     top: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
-
 #span3 {
     bottom: 0;
     right: -100%;
@@ -120,13 +101,11 @@ html {
     height: 2px;
     background: linear-gradient(270deg, transparent, #f317f3);
 }
-
 .nav-item:hover #span3 {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
-
 #span4 {
     bottom: -100px;
     left: 0;
@@ -134,13 +113,11 @@ html {
     height: 100%;
     background: linear-gradient(360deg, transparent, #f317f3);
 }
-
 .nav-item:hover #span4 {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
 }
-
 
 /* SECCION I N I C I O */
 .card {
@@ -153,7 +130,6 @@ html {
     align-items: center;
     padding: 24px 0;
 }
-
 .card-body {
     padding: 22px;
     background-color: #1e2326;
@@ -162,19 +138,16 @@ html {
     text-align: center;
     border-radius: 40px;
 }
-
 .card .card-body .contenido-banner h1 {
     font-family: 'Poppins', sans-serif;
     margin-top: 80px;
     font-size: 30px;
 }
-
 .card .card-body .contenido-banner h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: normal;
 }
-
 .content {
     background-image: url("../img/arthur.png");
     position: absolute;
@@ -185,7 +158,6 @@ html {
     z-index: 3;
     border-radius: 50%;
 }
-
 .box {
     position: relative;
     width: 300px;
@@ -195,7 +167,6 @@ html {
     overflow: hidden;
     top: 55px;
 }
-
 .box::before {
     content: '';
     position: absolute;
@@ -204,11 +175,9 @@ html {
     transition: 0.5s;
     animation: animate 4s linear infinite;
 }
-
 .box:hover::before {
     inset: -20px 0px;
 }
-
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -218,7 +187,6 @@ html {
         transform: rotate(360deg);
     }
 }
-
 .box::after {
     content: '';
     position: absolute;
@@ -227,7 +195,6 @@ html {
     border-radius: 50%;
     z-index: 1;
 }
-
 .inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 35px;
