@@ -1,0 +1,160 @@
+
+/* SECCION CURRICULUM */
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* EFECTO SOMBRA */
+.shadow-effect:hover {
+    box-shadow: 0 2px 20px rgba(56, 206, 243, 0.5);
+
+}
+
+.curriculum h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.curriculum .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .row .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .row .col-md-6 h3 {
+    font-family: 'Familjen Grotesk', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.curriculum .row .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.curriculum .row .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.curriculum .row .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .row .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .row .item .casa {
+    color: #38cef3;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .row .item .fecha {
+    display: block;
+    color: #38cef3;
+    margin-bottom: 10px;
+}
+
+.curriculum .row .item p {
+    line-height: 24px;
+}
+
+.curriculum .row .izq {
+    border-right: 2px solid #38cef3;
+    margin-right: 20px;
+}
+
+.curriculum .row .der {
+    border-left: 2px solid #38cef3;
+    margin-left: 20px;
+}
+
+.curriculum .row .item .conectori {
+    height: 2px;
+    background-color: #38cef3;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .row .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #38cef3;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .row .item .conectord {
+    height: 2px;
+    background-color: #38cef3;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .row .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #38cef3;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.curriculum button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #38cef3;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum button:hover .overlay {
+    width: 100%;
+}
