@@ -11,7 +11,7 @@ export class SobremiComponent implements OnInit {
   constructor() {}
   
   ngOnInit() {
-    this. efectoescritura();
+    this.efectoescritura();
   }
 
   efectoescritura(){
