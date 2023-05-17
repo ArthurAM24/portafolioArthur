@@ -16,13 +16,13 @@ import { SkillsComponent } from './components/skills/skills.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     HomeComponent,
     SobremiComponent,
+    SkillsComponent,
     CurriculumComponent,
     PortfolioComponent,
     ContactoComponent,
-    SkillsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
