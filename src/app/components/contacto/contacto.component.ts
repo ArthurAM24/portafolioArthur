@@ -14,15 +14,6 @@ export class ContactoComponent {
     event.preventDefault();
     const form = new FormData(event.target);
 
-    if (this.formHasEmptyFields(form)) {
-      Swal.fire({
-        title: 'Error',
-        text: 'Debes rellenar todos los campos del formulario',
-        icon: 'error'
-      });
-      return;
-    }
-
     fetch(event.target.action, {
       method: event.target.method,
       body: form,

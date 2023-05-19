@@ -1,0 +1,99 @@
+/* MENU */
+.container-fluid {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar-toggler {
+    color: #38cef3;
+    background: #38cef3;
+}
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #38cef3;
+}
+.navbar-nav .nav-link {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.navbar-brand:hover {
+    color: #38cef3;
+}
+.navbar ul li a {
+    font-size: 18px;
+    color: #f7f3f3;
+    margin: 0 10px;
+    padding: 3px;
+    transition: .5s;
+}
+.navbar ul li a:active {
+    color: #f7f3f3;
+}
+.navbar ul li a:hover {
+    color: #38cef3;
+    text-shadow: 1px 1px #38cef3;
+}
+.nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 5px 3px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.nav-item span {
+    position: absolute;
+    display: block;
+}
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f317f3);
+}
+.nav-item:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f317f3);
+}
+.nav-item:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f317f3);
+}
+.nav-item:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span4 {
+    bottom: -100px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f317f3);
+}
+.nav-item:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

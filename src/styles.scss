@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* SECCION HOME */
+.card {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url('assets/img/fondo.jpg');
+    background-size: cover;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    --bs-card-border-radius:none;
+}
+
+.content {
+    background-image: url('assets/img/arthur.png');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    inset: 7px;
+    border-radius: 3px solid #38cef3;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+/* SECCION PORTAFOLIO */
+.portfolio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url('assets/img/fondo.jpg');
+    background-size: cover;
+    height: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+.proyecto1 {
+    background-image: url('assets/img/p1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 260px;
+    height: 250px;
+    width: fit-content;
+}
+
+.proyecto2 {
+    background-image: url('assets/img/p2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 260px;
+    height: 250px;
+    width: fit-content;
+}
+
+.proyecto3 {
+    background-image: url('assets/img/p3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 260px;
+    height: 250px;
+    width: fit-content;
+}
+/* SECCION CONTACTO */
+.contacto {
+    background-image:
+        url('assets/img/contact_bg.png');
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}

@@ -1,0 +1,581 @@
+/* SECCION S K I L L S */
+.skills {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    color: #38cef3;
+    margin-bottom: 25px;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #38cef3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #38cef3;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 15px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .java {
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .php {
+    width: 0%;
+    animation: 2s php forwards;
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .cshard {
+    width: 0%;
+    animation: 2s cshard forwards;
+}
+
+@keyframes cshard {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .c {
+    width: 0%;
+    animation: 2s c forwards;
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .firebase {
+    width: 0%;
+    animation: 2s firebase forwards;
+}
+
+@keyframes firebase {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+
+.skills .skill .mysql {
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .sqlserver {
+    width: 0%;
+    animation: 2s sqlserver forwards;
+}
+
+@keyframes sqlserver {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .mariadb {
+    width: 0%;
+    animation: 2s mariadb forwards;
+}
+
+@keyframes mariadb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+.skills .skill .javaspring {
+    width: 0%;
+    animation: 2s javaspring forwards;
+}
+
+@keyframes javaspring {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .angular {
+    width: 0%;
+    animation: 2s angular forwards;
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 83%;
+    }
+}
+
+.skills .skill .laravel {
+    width: 0%;
+    animation: 2s laravel forwards;
+}
+
+@keyframes laravel {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .eclipse {
+    width: 0%;
+    animation: 2s eclipse forwards;
+}
+
+@keyframes eclipse {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .intellij {
+    width: 0%;
+    animation: 2s intellij forwards;
+}
+
+@keyframes intellij {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.skills .skill .javaScript {
+    width: 0%;
+    animation: 2s javaScript forwards;
+}
+
+@keyframes javaScript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 86%;
+    }
+}
+
+.skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 81%;
+    }
+}
+
+.skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 79%;
+    }
+}
+
+.skills .skill .apirest {
+    width: 0%;
+    animation: 2s apirest forwards;
+}
+
+@keyframes apirest {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .jpa {
+    width: 0%;
+    animation: 2s jpa forwards;
+}
+
+@keyframes jpa {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .windows {
+    width: 0%;
+    animation: 2s windows forwards;
+}
+
+@keyframes windows {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .linux {
+    width: 0%;
+    animation: 2s linux forwards;
+}
+
+@keyframes linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .scrum {
+    width: 0%;
+    animation: 2s scrum forwards;
+}
+
+@keyframes scrum {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .cascada {
+    width: 0%;
+    animation: 2s cascada forwards;
+}
+
+@keyframes cascada {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.skills .skill .diseño {
+    width: 0%;
+    animation: 2s diseño forwards;
+}
+
+@keyframes diseño {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .redes {
+    width: 0%;
+    animation: 2s redes forwards;
+}
+
+@keyframes redes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .ofimatica {
+    width: 0%;
+    animation: 2s ofimatica forwards;
+}
+
+@keyframes ofimatica {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .diseñosis {
+    width: 0%;
+    animation: 2s diseñosis forwards;
+}
+
+@keyframes diseñosis {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .informatica {
+    width: 0%;
+    animation: 2s informatica forwards;
+}
+
+@keyframes informatica {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .poo {
+    width: 0%;
+    animation: 2s poo forwards;
+}
+
+@keyframes poo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .arduino {
+    width: 0%;
+    animation: 2s arduino forwards;
+}
+
+@keyframes arduino {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.skills .skill .spframe {
+    width: 0%;
+    animation: 2s spframe forwards;
+}
+
+@keyframes spframe {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .android {
+    width: 0%;
+    animation: 2s android forwards;
+}
+
+@keyframes android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .google {
+    width: 0%;
+    animation: 2s google forwards;
+}
+
+@keyframes google {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 79%;
+    }
+}
+
+.skills .skill .docker {
+    width: 0%;
+    animation: 2s docker forwards;
+}
+
+@keyframes docker {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 41%;
+    }
+}
+
+.skills .skill .wordpress {
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+
+@keyframes wordpress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 88%;
+    }
+}

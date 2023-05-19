@@ -6,13 +6,13 @@
       <div class="col-md-6">
         <form action="https://formspree.io/f/xlekvlvv" method="POST" (submit)="handleSubmit($event)">
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Tú Nombre" name="name">
+            <input type="text" class="form-control" placeholder="Tú Nombre" name="name" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Dirección de correo" name="email">
+            <input type="email" class="form-control" placeholder="Dirección de correo" name="email" required>
           </div>
           <div class="mb-3">
-            <textarea class="form-control" rows="5" placeholder="Mensaje" name="message"></textarea>
+            <textarea class="form-control" rows="5" placeholder="Mensaje" name="message" required ></textarea>
           </div>
           <button type="submit" class="btn-submit">
             Enviar Mensaje <i class="fas fa-paper-plane"></i>

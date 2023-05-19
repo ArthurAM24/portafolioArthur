@@ -1,0 +1,103 @@
+/* SECCION CONTACTO */
+
+/* sweetalert2 cambio de color en el boton OK */
+.swal2-confirm {
+    background-color: #38cef3 !important;
+    border-color: #2bb3d4;
+    box-shadow: 0 0 0 0.2rem #2bb3d4 !important;
+}
+
+.col-md-6 {
+    margin-bottom: 85px;
+}
+.col-md-6 .info ul {
+    top: 300px;
+    background-color: #252A2E;
+    padding: 30px;
+    width: 400px;
+    left: auto;
+    right: 5%;
+    transform: translate(-50, -5%);
+    margin-top: -90px;
+    margin-bottom: auto;
+    list-style: none;
+}
+.contacto .container {
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 58px;
+}
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila {
+    display: flex;
+}
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #38cef3;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay {
+    width: 100%;
+}
+.contacto .col img {
+    width: 100%;
+}
+.contacto .col .info {
+    position: absolute;
+    top: 25%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul {
+    list-style: none;
+}
+.contacto .col .info ul li {
+    margin-bottom: 55px;
+}
+.contacto .col .info ul li i {
+    color: #38cef3;
+    display: inline-block;
+    margin-right: 20px;
+}
