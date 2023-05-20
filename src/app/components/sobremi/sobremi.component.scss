@@ -89,10 +89,12 @@
 .sobremi .row .col-md-3 .interes:hover {
     background-color: #38cef3;
     box-shadow: 0 0 20px #38cef3;
+    transform: scale(0.9);
 }
 
 .sobremi .row .interes i {
     font-size: 30px;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
