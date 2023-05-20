@@ -17,7 +17,7 @@ export class SkillsComponent implements OnInit {
     const skills = document.getElementById("skills");
     if (skills) {
       const distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-      if (distancia_skills >= 500) {
+      if (distancia_skills >= 100) {
         const habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("java");
         habilidades[1].classList.add("php");
@@ -41,10 +41,10 @@ export class SkillsComponent implements OnInit {
         habilidades[19].classList.add("linux");
         habilidades[20].classList.add("scrum");
         habilidades[21].classList.add("cascada");
-        habilidades[22].classList.add("diseño");
+        habilidades[22].classList.add("diseno");
         habilidades[23].classList.add("redes");
         habilidades[24].classList.add("ofimatica");
-        habilidades[25].classList.add("diseñosis");
+        habilidades[25].classList.add("disenosis");
         habilidades[26].classList.add("informatica");
         habilidades[27].classList.add("poo");
         habilidades[28].classList.add("arduino");
