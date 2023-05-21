@@ -13,7 +13,7 @@
 }
 
 .portfolio a {
-    color:#131517;
+    color: #131517;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
@@ -24,7 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .portfolio .galeria .proyecto1,
@@ -53,6 +53,7 @@
     letter-spacing: 3px;
     opacity: 0;
 }
+
 .portfolio .galeria .proyecto1 .overlay h3,
 .portfolio .galeria .proyecto2 .overlay h3,
 .portfolio .galeria .proyecto3 .overlay h3 {
@@ -64,11 +65,26 @@
 .portfolio .galeria .proyecto2 .overlay:hover,
 .portfolio .galeria .proyecto3 .overlay:hover {
     opacity: 1;
-    
+
 }
 
 .portfolio .galeria .proyecto1 .overlay:hover h3,
 .portfolio .galeria .proyecto2 .overlay:hover h3,
 .portfolio .galeria .proyecto3 .overlay:hover h3 {
     margin-bottom: 0px;
+}
+
+.proyecto1,
+.proyecto2,
+.proyecto3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.proyecto1.appear,
+.proyecto2.appear,
+.proyecto3.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
