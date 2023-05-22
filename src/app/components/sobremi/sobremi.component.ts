@@ -16,8 +16,8 @@ export class SobremiComponent implements OnInit {
 
   efectoescritura(){
     var typed= new Typed('.text',{
-      strings:['Hola Soy Arthur.','Soy una persona apasionada por la programación.','Me gusta la informática y el diseño.','He realizado prácticas relacionadas con la informática, diseño web y programación.'
-    ,'Me considero una persona responsable, creativa y puntual.','Tengo buen manejo de relaciones interpersonales y facilidad para trabajar en equipo.'],
+      strings:['Hola Soy Arthur.','Diseñador Web.'
+    ,'Programador.'],
       typeSpeed:50,
       backSpeed:20,
       backDelay:1500,
