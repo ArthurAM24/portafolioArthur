@@ -7,19 +7,29 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 })
 export class CurriculumComponent {
 
+  private lastScrollPosition = 0;
   constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
 
-  ngOnInit(): void {
-    this.activateAppearEffect();
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (Math.abs(currentScrollPosition - this.lastScrollPosition) >= 50) {
+      this.lastScrollPosition = currentScrollPosition;
+      this.activateAppearEffect();
+    }
   }
 
   activateAppearEffect() {
     const items = this.elementRef.nativeElement.querySelectorAll('.item');
 
     items.forEach((item: HTMLElement, index: number) => {
-      setTimeout(() => {
+      const rect = item.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (isVisible) {
         this.renderer.addClass(item, 'appear');
-      }, index * 200);
+      }
     });
   }
   downloadCV() {

@@ -1,16 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
- 
+export class SkillsComponent {
   constructor() {}
+  private lastScrollPosition = 0;
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  ngOnInit() {
-    this.efectoHabilidades();
+    if (Math.abs(currentScrollPosition - this.lastScrollPosition) >= 50) {
+      this.lastScrollPosition = currentScrollPosition;
+      this.efectoHabilidades();
+    }
   }
 
   efectoHabilidades() {
@@ -56,5 +60,4 @@ export class SkillsComponent implements OnInit {
       }
     }
   }
-
 }

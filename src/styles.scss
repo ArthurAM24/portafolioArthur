@@ -16,12 +16,191 @@ html {
     scroll-behavior: smooth;
 }
 
+/* MENU HEADER */
+.container-fluid {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-toggler {
+    color: #38cef3;
+    background: #38cef3;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #38cef3;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.navbar-brand:hover {
+    color: #38cef3;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: #f7f3f3;
+    margin: 0 10px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.navbar ul li a:active {
+    color: #f7f3f3;
+}
+
+.navbar ul li a:hover {
+    color: #38cef3;
+    text-shadow: 1px 1px #38cef3;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 2px 2px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.nav-item span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span4 {
+    bottom: -100px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f317f3);
+}
+
+.nav-item:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* SECCION FOOTER */
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #38cef3;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #38cef3;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    text-decoration: none;
+    border: 1px solid #38cef3;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+.arriba:hover {
+    background: #38cef3;
+    color: #fff;
+    box-shadow: 0 0 20px #38cef3;
+}
+
+.redes h2 {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.redes a:hover {
+    background: #38cef3;
+    color: #fff;
+    box-shadow: 0 0 20px #38cef3;
+}
+
 /* SECCION HOME */
 .card {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
         url('assets/img/fondo.jpg');
     background-size: cover;
-    height: 86vh;
+    height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -50,6 +229,7 @@ html {
     display: flex;
     align-items: center;
     padding: 50px 20px;
+    padding-bottom: 90px;
 }
 
 .proyecto1 {
@@ -89,4 +269,10 @@ html {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
+    background-size: cover;
+    height: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
 }

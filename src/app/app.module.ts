@@ -2,27 +2,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { SobremiComponent } from './components/sobremi/sobremi.component';
-import { CurriculumComponent } from './components/curriculum/curriculum.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { NavbarComponent } from './sharepages/navbar/navbar.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { FooterComponent } from './sharepages/footer/footer.component';
+import { SobremiComponent } from './pages/sobremi/sobremi.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { CurriculumComponent } from './pages/curriculum/curriculum.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    InicioComponent,
     SobremiComponent,
     SkillsComponent,
     CurriculumComponent,
-    PortfolioComponent,
-    ContactoComponent,
-    FooterComponent,
+    PortafolioComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
