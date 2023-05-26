@@ -21,7 +21,7 @@ export class PortafolioComponent {
   }
 
   activateAppearEffect() {
-    const proyectos = this.elementRef.nativeElement.querySelectorAll('.proyecto1, .proyecto2, .proyecto3');
+    const proyectos = this.elementRef.nativeElement.querySelectorAll('.proyecto1, .proyecto2, .proyecto3, .proyecto4');
 
     proyectos.forEach((proyecto: HTMLElement, index: number) => {
       const rect = proyecto.getBoundingClientRect();

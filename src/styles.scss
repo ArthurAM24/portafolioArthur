@@ -228,7 +228,6 @@ footer .arriba {
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 50px 20px;
     padding-bottom: 90px;
 }
 
@@ -254,6 +253,15 @@ footer .arriba {
 
 .proyecto3 {
     background-image: url('assets/img/p3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 260px;
+    height: 250px;
+    width: fit-content;
+}
+.proyecto4 {
+    background-image: url('assets/img/p4.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
