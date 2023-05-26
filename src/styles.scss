@@ -231,6 +231,13 @@ footer .arriba {
     padding-bottom: 90px;
 }
 
+#portfolio .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .proyecto1 {
     background-image: url('assets/img/p1.jpg');
     background-size: cover;
