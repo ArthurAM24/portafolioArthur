@@ -43,14 +43,16 @@
 
 .curriculum .row .izq{
     border-right: 2px solid #252A2E;
+    margin-right: 20px;
 }
 
 .curriculum .row .der {
     border-left: 2px solid #252A2E;
+    margin-left: 20px;
 }
 
 .curriculum .row .item {
-    padding: 45px;
+    padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
@@ -91,10 +93,10 @@
 .curriculum .row .item .conectori {
     height: 2px;
     background-color: #38cef3;
-    width: 47px;
+    width: 30px;
     position: absolute;
     top: 50%;
-    right: -47px;
+    right: -30px;
     z-index: 5;
 }
 
@@ -112,10 +114,10 @@
 .curriculum .row .item .conectord {
     height: 2px;
     background-color: #38cef3;
-    width: 47px;
+    width: 30px;
     position: absolute;
     top: 50%;
-    left: -47px;
+    left: -30px;
     z-index: 5;
 }
 
